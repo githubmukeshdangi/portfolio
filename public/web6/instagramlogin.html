@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Instagram</title>
+    <link rel="stylesheet" href="../../public/">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .parent-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+
+
+        }
+
+        .section {
+            border: 2px solid rgb(226, 223, 223);
+
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+
+
+        .section1 {
+            border: 2px solid rgb(241, 234, 234);
+            padding: 10px;
+            text-align: center;
+            width: 400px;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        .OR {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: gray;
+        }
+
+        .password {
+            text-align: center;
+            font-size: 12px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(29, 33, 73);
+        }
+
+        #signup {
+            color: darkcyan;
+        }
+
+        footer {
+            font-size: 13px;
+            color: gray;
+            text-align: center;
+        }
+
+        .select {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .image {
+            margin-left: 200px;
+        }
+
+        .page {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+
+        form {
+            margin-left: -90px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid bg-light">
+    <div class="parent-container">
+        <div class="child-container">
+            <div class="page mb-5">
+                <div class="image mt-4"><img src="../images/phone.PNG" height="625px" width="400px"></div>
+                <form class="form">
+
+                    <div class="section mb-3 bg-white">
+                        <div class="img mb-2 text-center"><img src="../images/instagram logo.PNG" alt=""></div>
+                        <div class="mb-2"><input class="form-control" type="text" name="username"
+                                placeholder="Phone number, username, or email"></div>
+                        <div class="mb-3"><input class="form-control" type="password" name="Password"
+                                placeholder="Password"></div>
+                        <div class="mb-3"><button class="btn btn-primary w-100">Log In</button></div>
+                        <div class="OR mb-4">
+                            <p>OR</p>
+                        </div>
+                        <div class="login mb-3 text-center"><span class="bi bi-facebook"></span><a href="#"> Log in with
+                                Facebook</a>
+                        </div>
+                        <div class="password"><a href="#">Forget password?</a></div>
+                    </div>
+                    <div class="section1 mb-4 bg-white">
+                        <div class="pt-2">
+                            <p>Don't have an account?<a id="signup" href="#"> Sign up</a></p>
+                        </div>
+                    </div>
+                    <div class="get text-center">
+                        <p>Get the app.</p>
+                    </div>
+                    <div class="img mb-3 text-center"><img src="../images/app store.png" width="140px"
+                            height="40px">&nbsp;<img src="../images/google pay.png" width="140px" height="40&px"></div>
+
+                </form>
+            </div>
+            <footer class="mb-3">
+                <div class="mb-3">
+                    <a href="#">Meta</a> &nbsp;&nbsp;</a>
+                    <a href="#">About</a> &nbsp;&nbsp;</a>
+                    <a href="#">Blog</a> &nbsp;&nbsp;</a>
+                    <a href="#">Jobs</a> &nbsp;&nbsp;</a>
+                    <a href="#">Help</a> &nbsp;&nbsp;</a>
+                    <a href="#">API</a> &nbsp;&nbsp;</a>
+                    <a href="#">privacy</a> &nbsp;&nbsp;</a>
+                    <a href="#">Terms</a> &nbsp;&nbsp;</a>
+                    <a href="#">Top Accounts</a> &nbsp;&nbsp;</a>
+                    <a href="#">Hashtags</a> &nbsp;&nbsp;</a>
+                    <a href="#">Locations</a> &nbsp;&nbsp;</a>
+                    <a href="#">Instagram Lite</a> &nbsp;&nbsp;</a>
+                </div>
+                <div class="text-center mb-3">
+                    <a href="#">Dance</a> &nbsp;&nbsp;</a>
+                    <a href="#">Food & Drink</a> &nbsp;&nbsp;</a>
+                    <a href="#">Home & Garden</a> &nbsp;&nbsp;</a>
+                    <a href="#">Music</a> &nbsp;&nbsp;</a>
+                    <a href="#">Visual Arts</a> &nbsp;&nbsp;</a>
+                </div>
+
+
+                <div class="select mb-3">
+                    <div><span><select>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Dutch</option>
+                                <option>Polis</option>
+                                <option>German</option>
+                                <option>Nepali</option>
+                            </select></span>
+                        <span>&#169; 2022 Instagram from Meta</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-in">
+    <head>
+        <title>Naresh Technologies</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            a {
+                text-decoration: none;
+                color: white;
+    
+    
+            }
+          .userimg :hover{
+              
+              width: 180px;
+              height: 180px;
+
+          }
+                 
+
+
+        </style>
+    </head>
+    <body class="container-fluid">
+     
+    <h2 class="text-center m-4"><strong>Naresh Institute and Technologies</strong></h3>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  " style="border-radius: 5px;">
+                <div class="container-fluid">
+                    <button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler " style="width: 100px;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="navbar-nav navbar-collapse collapse " id="menu">
+    
+                        <div class="nav-item me-3 ">
+                            <a href="index.html"  class="nav-link"> <span
+                                    class="bi bi-house-fill"></span> home</a>
+                        </div>
+                        <div class="nav-item me-3 ">
+                            <a href="../public/electronics.html"  class="nav-link"> <span
+                                    class="bi bi-question-circle"></span>About </a>
+                        </div>
+                        <div class="nav-item me-3 ">
+                            <a href="sitehome.html"  class="nav-link"> <span
+                                    class="bi bi-question-circle"></span> Service</a>
+                        </div>
+                        <div class="nav-item me-3">
+                            <a href="#"  class="nav-link"> <span class="bi bi-phone-fill"></span> Contact
+                                us</a>
+                        </div>
+    
+    
+                        <div class="nav-item " style="margin-left: 600px;">
+                            <div class="dropdown ">
+                                <button data-bs-target="#items" data-bs-toggle="dropdown"
+                                    class="dropdown-toggle btn btn-dark"> <span class="bi bi-arrow-bar-right"
+                                        style="color: rgb(214, 216, 218);">SignIn</span>
+    
+                                </button>
+                                <div class="dropdown-menu collapse bg-info" id="items">
+                                    <div class="dropdown-item"><a href="#"> <span class="bi bi-arrow-bar-right"> SignIn
+                                            </span></a>
+                                    </div>
+                                    <div class="dropdown-item"><a href="#"> <span class="bi bi-person-plus"> Signup
+                                            </span></a>
+                                    </div>
+                                    <div class="dropdown-item"><a href="#"> <span class="bi bi-lock"> Change Password
+                                            </span> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+
+
+        <div class="d-flex justify-content-center align-items-center  " style="margin-top: 30px; ">
+            <form class="border border-2 rounded p-3" style=" background-color: azure; box-shadow: 5px 4px 4px gray;" >
+            <h4 class="text-center mb-4">
+                Registration Form
+            </h4>
+            <div  class=" mt-2">
+                <label class="form-label" for="username"><strong>Full name:</strong></label>
+              <input class="form-control" type="text" name="username" placeholder="full name">
+            </div>
+            <div  class=" mt-2">
+                <label class="form-label" for="usermail"><strong>Email:</strong></label>
+              <input class="form-control" type="email" name="usermail" placeholder="email id">
+            </div>
+            <div  class=" mt-2">
+                <label class="form-label" for="usernumber"><strong>Mobile:</strong></label>
+              <input class="form-control" type="text" name="usernumber" placeholder="Contact Number">
+            </div>
+            <div  class=" mt-2">
+                <label class="form-label" for="date"><strong>Date:</strong></label>
+              <input class="form-control" type="text" name="date" placeholder="date">
+            </div>
+            <div  class=" mt-2">
+                <label class="form-label" for="img"><strong>Image:</strong></label>
+                <div>
+                    <input type="file" name="attachment" class="form-control"  multiple>
+                </div>
+            </div>
+            <div  class=" mt-2">
+                <label class="form-label" for="userpassword"><strong>Password:</strong></label>
+                <div >
+                    <input class="form-control" type="password" placeholder="password" name="userpassword">
+                </div>
+            </div>
+            <div class=" mt-2">
+                <label><strong>Gender:</strong></label>
+                
+                    <input  type="radio" name="gender" value="male" required>Male
+                    <input  type="radio" name="gender" value="female" required>female
+
+        
+            </div>
+             <div class=" mt-3">
+                 <input type="checkbox" >  <label > I've read and Accept the <span style="color:red">Terms and conditions</span></label>
+             </div>
+            <div class="d-flex mt-3">
+         <div><button class="btn btn-warning m-4" style="width: 250px; font-size: 15px; ">  Already you have an account</button></div>
+         <div>  <button class="btn btn-success m-4 " style="width: 100px; font-size: 15px;"> Register</button>
+         </div>  
+                      </div>
+            </form>
+
+            <div class="userimg ">
+                <img src="./images/user.png"  width="150" height="150" class=" p-4" >
+            </div>
+        </div>
+            
+        <footer class=" mt-4  p-4 mb-1 " style="color: white; text-shadow: 1px 1px 1px rgb(214, 210, 210); border-radius: 5px; background-color: gray; " >
+            <p class="text-center mb-4" >Naresh Technologies</p>
+            <div class="row ms-4">
+                <ul class=" col-4 " >
+                    <li class=" mb-2"><a href="https://www.facebook.com/nareshit/" target="_blank"><span
+                        class="bi bi-facebook"></span>
+                    Facebook</a></li>
+
+                    <li class=" mb-2"><a href="https://nareshit.in/course-schedule/" target="_blank"><span
+                        class="bi bi-google"></span>
+                    Google</a></li>
+
+                    <li class=" mb-2"><a href="https://twitter.com/nareshitech?lang=en" target="_blank"><span
+                                        class="bi bi-twitter"></span>
+                                    Twitter</a></li>
+
+                    <li class=" mb-2"><a href="https://www.youtube.com/user/nareshtechnologies" target="_blank"><span
+                                        class="bi bi-youtube"></span> Youtube</a></li>
+                </ul>
+
+                <ul class=" col-4 ">
+                    <li class=" mb-2"><a href="#">Home</a></li>
+                    <li class=" mb-2"><a href="#">About</a></li>
+                    <li class=" mb-2"><a href="#">Service</a></li>
+                    <li class=" mb-2"><a href="#">Contact</a></li>
+                </ul>
+                <ul class=" col-4">
+                            <li class=" mb-2">Name : Naresh Istitute</li>
+                            <li class=" mb-2">Email : info@nareshit.com</li>
+                            <li class=" mb-2">Contact : +91-xxxxxxxxxx</li>
+                            <li class=" mb-2">Address : Sr nagar, Hyderabad, Telangana, India </li>
+                    
+                </ul>
+            </div>
+        </footer>
+      
+        
+           
+        
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

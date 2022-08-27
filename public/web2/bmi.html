@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+
+        function addClick() {
+            var age = document.getElementById("personAge").value;
+            var h = parseInt(document.getElementById("height").value) / 100;
+            var W = parseInt(document.getElementById("bodyweight").value);
+            var bmi = W * age / h + W;
+            document.getElementById("BMI").innerHTML = `BMI : ${Math.round(bmi)}kg/m^2 `;
+ }
+    </script>
+</head>
+
+<body class="container-fluid mt-4"
+    style="background-image: url(../images/BMI-for-children-calculator.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="card border border-primary"
+        style="width: 500px; margin-left: 450px;margin-top: 100px; background-color: rgba(212, 228, 141, 0.384); ">
+        <div class="card-header  text-center" style=" background-color: rgb(85, 219, 213); color: white;">
+            <h1>BMI Calculator</h1>
+        </div>
+
+
+        <div class="card-body">
+            <div class=" mt-2 text-center">
+                <div class="input-group-text"> <span> Age :</span> <input class="form-control" type="number" min="1"
+                        max="100" id="personAge"></div>
+            </div>
+            <div class=" mt-2 text-center">
+                <span>Gender</span> <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female
+            </div>
+            <div class=" mt-2 text-center">
+                <div class="input-group-text"><span>Height:</span> <input class="form-control" type="number" id="height"
+                        min="100" max="200">&nbsp;cm </div>
+            </div>
+            <div class=" mt-2 text-center">
+                <div class="input-group-text"><span>Weight:</span><input class="form-control" onchange="WeightClick()"
+                        type="number" id="bodyweight" min="10" max="100">&nbsp;kg</div>
+            </div>
+        </div>
+
+
+         <div class="card-footer text-center">
+            <button onclick="addClick()" class="btn btn-danger">Calculate</button>
+            <div class=" mt-2">
+                <h1 id="BMI"> </h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>offcanvas navbar</title>
+<link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="../../node_modules/templates/offcanvas.css">
+<style></style>
+</head>
+<body class="container-fluid">
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <h2 class="navbar-brand">Amazon Shopping</h2>
+            <button data-bs-target="#menu" type="button"  data-bs-toggle="collapse"  id="navbarSideCollapse" class="navbar-toggler ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sitehome.html" target="framebody"> <span class="bi bi-house"></span> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="electronics.html" target="framebody"> <span class="bi bi-tv-fill"> electronics</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="fashion.html" target="framebody"> <span class="bi bi-shop"></span> Fashion</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                        <button data-bs-target="#items" data-bs-toggle="dropdown" class="dropdown-toggle btn btn-primary"> <span class="bi bi-globe"></span> Language</button>
+                       <div class="dropdown-menu collapse " id="items"  >
+                        <div class="dropdown-item"><a href="#"><span class="dropdown-item-text" >english</span></a></div>
+                        <div class="dropdown-item"><a href="#"><span class="dropdown-item-text">हिन्दी</span></a></div>
+                        <div class="dropdown-item dropdown-divider"></div>
+                        <div class="dropdown-item"> <span class="bi bi-question-circle"></span > help</div>
+                       </div>
+                       </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+        </div>
+    </div>
+    <div>
+        <section>
+           <iframe src="sitehome.html" width="100% " height="600px" style="border: none;" name="framebody"></iframe>
+        </section>
+    </div>
+<script src="../../node_modules/jquery/dist/jquery.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="../../node_modules/templates/offcanvas.js"></script>
+</body>
+</html>

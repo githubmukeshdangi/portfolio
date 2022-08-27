@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Nasa Api Cards</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function LoadPhotos() {
+            fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY")
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    for (var item of data.photos) {
+                        var div = document.createElement("div");
+                        div.className = "card border border-3 m-2 p-2";
+                        div.style.width = "350px";
+                        div.innerHTML = `
+                        <div class="row">
+                            <img src=${item.img_src} height="200" class="mt-2 col-6">
+                  <div class="col-6 mt-2">
+                    <h3>${item.id}</h3>
+                    
+                    <div>
+                        <dl>
+                        <dt>Camera Name</dt>
+                        <dd>${item.camera.full_name}</dd>
+                            <dt>Rover Name</dt>
+                                <dd>${item.rover.name}</dd>
+                                    </dl>
+                                    </div>
+                                </div>
+                                </div>
+                  `;
+                        document.getElementById("photosContainer").appendChild(div);
+                    }
+                })
+
+
+        }
+        function bodyLoad() {
+            LoadPhotos();
+        }
+    </script>
+
+
+</head>
+
+<body onload="bodyLoad()" class="container-fluid">
+    <h2>Mars rover Photos</h2>
+    <div id="photosContainer" class="d-flex justify-content-between flex-wrap">
+
+
+    </div>
+</body>
+
+</html>

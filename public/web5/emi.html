@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI calculater</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+      function AmountChange(){
+        document.getElementById("txtAmount").value=document.getElementById("rangeAmount").value;
+      }
+      function YearChange(){
+        document.getElementById("txtYear").value=document.getElementById("rangeYear").value;
+      }
+      function RateChange(){
+        document.getElementById("txtRate").value=document.getElementById("rangeRate").value;
+      }
+      function CalculateClick(){
+        var P=parseInt(document.getElementById("txtAmount").value);
+        var r=parseInt(document.getElementById("txtRate").value);
+        var n=parseInt(document.getElementById("txtYear").value);
+        var emi=P*r/(1-(Math.pow(1/(1+r),n)));
+        document.getElementById("result").innerHTML=Math.round(emi);
+        
+      }
+    </script>
+</head>
+<body class="container-fluid">
+    <h3>Personal Loan Calculater</h3>
+    <div class="row">
+        <div class="col input-group">
+            <span class="input-group-text">Amount you Need :</span><input type="text" id="txtAmount" class="form-control"></div>
+        <div class="col input-group">
+            <span class="input-group-text">for</span><input type="text" class="form-control" id="txtYear"><span class=" input-group-text">years</span></div>
+        <div class="col input-group">
+            <span class="input-group-text">interest</span><input type="text" class="form-control" id="txtRate"><span class=" input-group-text">%</span></div>
+    </div>
+    <div class="row ">
+        <div class="col input-group">50,000/- <input type="range" min="50000" max="1000000" value="50000" onchange="AmountChange()" id="rangeAmount">10,00,000/-</div>
+        <div class="col">3 <input type="range" value="3" min="3" max="5" onchange="YearChange()" id="rangeYear" >5</div>
+        <div class="col">8 % <input type="range" min="8" max="16" value="8" onchange="RateChange() " id="rangeRate" step="0.1" >16%</div>
+    </div>
+    <div class="row">
+         <button onclick="CalculateClick()" class="btn btn-primary w-25">Calculate</button>
+    </div>
+    
+    <h1 id="result" align="center"></h1>
+</body>
+</html>
